@@ -1,0 +1,9 @@
+.btn {
+  
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #010101;
+}
