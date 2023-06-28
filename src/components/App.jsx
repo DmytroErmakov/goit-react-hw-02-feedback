@@ -37,7 +37,8 @@ export class App extends React.Component {
       <div>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
+            /* options={['good', 'neutral', 'bad']} єто можем заменить. У цьому прикладі використовується Object.keys(this.state), щоб отримати масив ключів стану. Це дозволяє автоматично створити список опцій з усіх ключів стану */
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.handleFeedback}
           />
         </Section>
